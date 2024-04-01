@@ -7,6 +7,7 @@ use Livewire\Attributes\Computed;
 use Livewire\Attributes\Layout;
 use Livewire\Attributes\On;
 use Livewire\Attributes\Title;
+use Livewire\Attributes\Url;
 use Livewire\Component;
 use Livewire\WithPagination;
 
@@ -14,7 +15,8 @@ class ListMyUsers extends Component
 {
     use WithPagination;
 
-    public $search;
+    #[Url(as:'s')]
+    public $search = '';
 
     public User $selectedUser;
 

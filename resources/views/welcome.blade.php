@@ -30,7 +30,7 @@
 
             <x-modal name="test2" title="modal_2">
                 <x-slot:body>
-                    <span class="">Body tag test</span>
+                    <livewire:list-my-users>
                 </x-slot:body>
             </x-modal>
 
@@ -39,5 +39,7 @@
                     class="px-3 py-1 bg-blue-400 text-white rounded-md">
                         Open Modal 2
             </button>
+
+            <livewire:list-my-users>
     </body>
 </html>
